@@ -1,5 +1,3 @@
-# Some of your store items are food, which have a shelf life. Create a class called Food which inherits from your original class and has an additional property of shelf_life.
-
 class Cereal
 
   attr_reader :sugar_content, :color, :milk_fusion
@@ -9,6 +7,7 @@ def initialize(input_hash)
   @sugar_content = input_hash[:sugar_content]
   @color = input_hash[:color]
   @milk_fusion = input_hash[:milk_fusion]
+  @full_name = input_hash[:full_name]
 end
 
 def print_info
@@ -21,11 +20,3 @@ cinnamon_waffle = Cereal.new(sugar_content: "50mlg", color: "Brown", milk_fusion
 apple_franks = Cereal.new(sugar_content: "20mlg", color: "Red/Blue", milk_fusion: "none")
 
 puts captain_munch.print_info
-
-class Food < Cereal
-
-def initialize
-  super
-  @shelf_life = input_hash[:shelf_life]
-  end
-end
