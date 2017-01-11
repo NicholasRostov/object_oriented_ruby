@@ -1,4 +1,3 @@
-# Some of your store items are food, which have a shelf life. Create a class called Food which inherits from your original class and has an additional property of shelf_life.
 
 class Cereal
 
